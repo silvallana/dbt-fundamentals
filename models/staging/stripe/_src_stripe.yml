@@ -4,3 +4,10 @@ sources:
     schema: stripe
     tables:
       - name: payment
+        description: Raw payment data
+        columns:
+          - name: id
+            description: Primary key
+            data_tests:
+              - unique
+              - not_null   
